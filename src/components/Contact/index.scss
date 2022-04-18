@@ -1,0 +1,135 @@
+.contact-form{
+width: 100%;
+margin-top: 20px;
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+input[type="text"],input[type='email']{
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+textarea{
+width: 100%;
+border: 0;
+background: #115173;
+height: 50px;
+font-size: 16px;
+color: #fff;
+padding: 19px;
+min-height: 150px;
+box-sizing: border-box;
+
+}
+.flat2{
+  background: #022c43;
+  margin-right: 20px;
+}
+}
+ .info-map{
+   position: absolute;
+  background-color: #000;
+  top: 50px;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Helvetica";
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s forwards;
+  span{
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    color: #ffd700;
+  }
+
+ }   
+.map-wrap{
+  background: rgba(8,253,216,0.1);
+  float: right;
+  width: 53%;
+  height: 100%;
+  h1{
+    font-size: 80px;
+    font-family: "Coolvetica";
+    color: #fdd700;
+    font-weight: 400;
+    margin-top: 40%;
+    position: relative;
+    margin-bottom: 30%;
+    left: 30%;
+    &::before{
+     content: "<h1>";
+    color: #ffd700;
+    font-family: "La Belle Aurore";
+    font-size: 18px;
+    position: absolute;
+    margin-top: -10px;
+    left: -10px;
+    line-height: 18px;
+    animation: fadeIn 1s 1.7s backwards;  
+    opacity: 0.6; 
+    }
+    &::after{
+     content: "</h1>";
+    color: #ffd700;
+    font-family: "La Belle Aurore";
+    font-size: 18px;
+    position: absolute;
+    margin-left: 20px;
+    left: -30px;
+    bottom: -20px;
+    line-height: 18px;
+    animation: fadeIn 1s 1.7s backwards;  
+    opacity: 0.6; 
+    }
+}
+
+}
+.thank{
+  display: block;
+  width: 100%;
+  right: 15%;
+}
+.leaflet-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s forwards;
+}

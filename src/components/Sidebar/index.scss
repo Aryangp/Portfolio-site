@@ -35,7 +35,7 @@ nav{
     width: 100%;
 
     a{
-        font-size: 22px;
+        font-size: 26px;
         color: #4d4d4e;
         display: block;
         line-height:51px;
@@ -83,6 +83,16 @@ nav{
     a.contact-link{
         &:after{
             content: "CONTACT";
+        }
+    }
+    a.skill-link{
+        &:after{
+            content: "SKILL";
+        }
+    }
+    a.project-link{
+        &:after{
+            content: "PROJECT";
         }
     }
     a.active{

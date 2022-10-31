@@ -1,0 +1,41 @@
+{
+    "portfolio":[
+        {
+            "cover":"/portfolio/img/img2.png",
+            "title":"E-commerse",
+            "description":"React,commerse.js,Stripe,Jsx",
+            "url":"http://aryan-gupta-ecommerce.netlify.app/"
+
+        },
+        {
+            "cover":"/portfolio/img/img1.png",
+            "title":"Dance website",
+            "description":"Nodejs ,pug ,expressjs ,javascript",
+            "url":"http://aryan-gupta-ecommerce.netlify.app/"
+
+        },
+        {
+            "cover":"/portfolio/img/ai-project.png",
+            "title":"Face mood Recognition",
+            "description":"AI library,javascript",
+            "url":"https://chic-salmiakki-c9d800.netlify.app/"
+
+        },
+        {
+            "cover":"/portfolio/img/spotify-clone2.png",
+            "title":"spotify Clone",
+            "description":"Html,css,javascript",
+            "url":"https://laughing-williams-f7e70f.netlify.app/"
+
+        },
+        {
+            "cover":"/portfolio/img/netflix-clone.png",
+            "title":"netflix Clone",
+            "description":"React ,firebase, api,Material ui ,javascript",
+            "url":"https://github.com/Aryangp/netflix-clone-aryan"
+
+        }
+      
+       
+    ]
+}

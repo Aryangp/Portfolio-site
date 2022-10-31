@@ -92,7 +92,7 @@ const Contact=()=>{
           </div>
           <div className="map-wrap">
           
-                <h1>
+                <h1 className="text-zone">
                     <AnimateLetters letterClass={letterClass} strArray={["T","h","a","n","k"," ","y","o","u"]} idx={15}/>
                 </h1>
                

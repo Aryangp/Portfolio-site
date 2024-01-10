@@ -4,7 +4,7 @@ import LogoS from "../../assets/images/logo-s2.png"
 import LogoSubtitle from "../../assets/images/logo-sub2.png"
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faClose, faEnvelope, faEye, faHome, faLightbulb, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose, faEnvelope, faEye, faHome,faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar=()=>{

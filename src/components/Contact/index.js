@@ -1,46 +1,63 @@
-import emailjs from "@emailjs/browser";
-import { useEffect, useRef, useState } from "react";
-import Loader from "react-loaders";
-import AnimateLetters from "../AnimatedLetters";
-import "./index.scss";
-const Contact=()=>{
+import emailjs from '@emailjs/browser'
+import { useEffect, useRef, useState } from 'react'
+import Loader from 'react-loaders'
+import AnimateLetters from '../AnimatedLetters'
+import './index.scss'
+const Contact = () => {
+  const refForm = useRef()
+  const [letterClass, setLetterClass] = useState('text-animate')
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 3000)
+  }, [])
+  const sendEmail = (e) => {
+    e.preventDefault()
 
-  const refForm=useRef();
-    const [letterClass,setLetterClass]=useState("text-animate")
-    useEffect(()=>{
-        setTimeout(()=>{
-           setLetterClass("text-animate-hover")
-       },3000)
-   },[])
-   const sendEmail=(e)=>{
-   e.preventDefault()
-   
-   emailjs.sendForm('service_ekn3fjs', 'template_7xh0qtu', refForm.current,"G4ub5UPp1OnOQ_2W9")
-    .then(function(response) {
-      console.log(response);
-       alert('Message successfully sent !');
-    }, function(error) {
-      console.log(error.message);
-       alert("Failed to send message ,please try again")
-    });
-   }
-    return(
-        <>        
-        <div className="container contact-page">
-            <div className="text-zone">
-                <h1>
-                    <AnimateLetters letterClass={letterClass} strArray={["C",'o','n','t','a','c','t',' ','m','e']} idx={15}/>
-                </h1>
-                <p>
-                    I'm interested in freelance opportunity -especially ambitious or large projects.
-                    However .if other request or question ,don't hesitate to contact me using below form 
-                    either.
-                </p>
-           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail} >
+    emailjs
+      .sendForm(
+        'service_ekn3fjs',
+        'template_7xh0qtu',
+        refForm.current,
+        'G4ub5UPp1OnOQ_2W9'
+      )
+      .then(
+        function (response) {
+          console.log(response)
+          alert('Message successfully sent !')
+        },
+        function (error) {
+          console.log(error.message)
+          alert('Failed to send message ,please try again')
+        }
+      )
+  }
+  return (
+    <>
+      <div className="container contact-page">
+        <div className="text-zone">
+          <h1>
+            <AnimateLetters
+              letterClass={letterClass}
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              idx={15}
+            />
+          </h1>
+          <p>
+            I'm interested in freelance opportunity -especially ambitious or
+            large projects. However .if other request or question ,don't
+            hesitate to contact me using below form either.
+          </p>
+          <div className="contact-form">
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="from_name" required />
+                  <input
+                    placeholder="Name"
+                    type="text"
+                    name="from_name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
@@ -66,31 +83,43 @@ const Contact=()=>{
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button flat2" value="SEND" />
-                  <a href="https://drive.google.com/file/d/12W-FL5-eHN_9UA4ZLpKVXbzyY4drnhi5/view?usp=drivesdk"
-                   className="flat-button flat2 "
-                   target='_blank'
-                   >Download Resume</a>
+                  <input
+                    type="submit"
+                    className="flat-button flat2"
+                    value="SEND"
+                  />
+                  <a
+                    href="https://drive.google.com/file/d/12W-FL5-eHN_9UA4ZLpKVXbzyY4drnhi5/view?usp=drivesdk"
+                    className="flat-button flat2 "
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Download Resume
+                  </a>
                 </li>
               </ul>
             </form>
-           
-          </div>            
           </div>
-          <div className="info-map">
-               Aryan Gupta,
-               <br/>
-               India<br/>
-               1978 Sector 9, Ambala city<br/>
-               <span>ue218015.aryan.it@gmail.com</span>
-          </div>
-          <div className="map-wrap">
-          
-                <h1 className="text-zone">
-                    <AnimateLetters letterClass={letterClass} strArray={["T","h","a","n","k"," ","y","o","u"]} idx={15}/>
-                </h1>
-               
-            {/* <ReactMapGl
+        </div>
+        <div className="info-map">
+          Aryan Gupta,
+          <br />
+          India
+          <br />
+          1978 Sector 9, Ambala city
+          <br />
+          <span>ue218015.aryan.it@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <h1 className="text-zone">
+            <AnimateLetters
+              letterClass={letterClass}
+              strArray={['T', 'h', 'a', 'n', 'k', ' ', 'y', 'o', 'u']}
+              idx={15}
+            />
+          </h1>
+
+          {/* <ReactMapGl
             mapboxApiAccessToken={"sk.eyJ1IjoiYXJ5YW5ndXB0YTA1MTAiLCJhIjoiY2wyNG4zZjJ6MDl6cTNmcWk5enlvdHRnciJ9.YA_W0CRjzgvRty9kNHVrNQ"}
             {...viewPort}
             width="100%"
@@ -104,11 +133,10 @@ const Contact=()=>{
               <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer> */}
-          </div>
         </div>
-        <Loader type="pacman"/>
-        </>
-
-    )
+      </div>
+      <Loader type="pacman" />
+    </>
+  )
 }
-export default Contact;
+export default Contact

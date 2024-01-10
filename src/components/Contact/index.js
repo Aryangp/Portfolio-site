@@ -73,7 +73,7 @@ const Contact=()=>{
                 </li>
                 <li>
                   <input type="submit" className="flat-button flat2" value="SEND" />
-                  <a href="https://drive.google.com/file/d/1imWqFXF--v846c-jrjUnVO5Q5EHMIBoy/view?usp=drivesdk"
+                  <a href="https://drive.google.com/file/d/12W-FL5-eHN_9UA4ZLpKVXbzyY4drnhi5/view?usp=drivesdk"
                    className="flat-button flat2 "
                    target='_blank'
                    >Download Resume</a>

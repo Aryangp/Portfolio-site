@@ -1,6 +1,20 @@
 {
     "portfolio":[
         {
+            "cover":"/portfolio/img/vgm4esdw.bmp",
+            "title":"gpzer my own programing language",
+            "description":"Python",
+            "url":"https://github.com/Aryangp/Aryan-test-framework"
+
+        },
+        {
+            "cover":"/portfolio/img/u2skgisz.bmp",
+            "title":"aryan test framework",
+            "description":"Javascript, Jest ",
+            "url":"https://github.com/Aryangp/gpzer_my_own_programing_language"
+
+        },
+        {
             "cover":"/portfolio/img/img2.png",
             "title":"E-commerse",
             "description":"React,commerse.js,Stripe,Jsx",
@@ -30,8 +44,8 @@
         },
         {
             "cover":"/portfolio/img/netflix-clone.png",
-            "title":"netflix Clone",
-            "description":"React ,firebase, api,Material ui ,javascript",
+            "title":"Ethflix Clone",
+            "description":"React ,firebase, api,Material ui ,javascript,solidity",
             "url":"https://github.com/Aryangp/netflix-clone-aryan"
 
         }

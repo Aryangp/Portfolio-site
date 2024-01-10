@@ -1,16 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
-import ReactMapGl from "react-map-gl";
-import { MapConsumer, MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Loader from "react-loaders";
 import AnimateLetters from "../AnimatedLetters";
 import "./index.scss";
 const Contact=()=>{
-  const [viewPort,setViewPort]=useState({
-    latitude:37.7577,
-    longitude:76.7656,
-    zoom:10
-  });
+
   const refForm=useRef();
     const [letterClass,setLetterClass]=useState("text-animate")
     useEffect(()=>{
